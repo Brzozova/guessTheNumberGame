@@ -1,8 +1,14 @@
-print('Hello! Would you like to play a game with me?')
-# Let's start a guess the number game
 import random
 secretNumber = random.randint(1, 20)
-print('I am  thinking about a number between 1 and 20.')
+# Let's start a guess the number game
+
+print('Hello! Would you like to play a game with me?')
+answer = input()
+if answer == 'Yes':
+     print('I am  thinking about a number between 1 and 20.')
+elif answer == 'No':
+    print('No problem. Bye, bye!')
+
 
 #Ask the player to guess 6 times
 for guessesTaken in range(1, 7):
